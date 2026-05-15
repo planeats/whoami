@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>나의 소개 홈페이지</title>
+    <meta
+      name="description"
+      content="소개, 프로젝트, 관심사를 담은 개인 홈페이지입니다."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="홈으로 이동">YOUR NAME</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#work">프로젝트</a>
+        <a href="#contact">연락</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Homepage</p>
+          <h1 id="hero-title">
+            <span>안녕하세요,</span>
+            <span>저는 <strong>YOUR NAME</strong>입니다.</span>
+          </h1>
+          <p class="hero-text">
+            문제를 차분히 이해하고, 사람에게 도움이 되는 결과물을 만드는 데
+            관심이 있습니다. 이곳에는 저의 관심사, 프로젝트, 연락처를
+            정리했습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">프로젝트 보기</a>
+            <a class="button secondary" href="#contact">연락하기</a>
+          </div>
+        </div>
+        <div class="profile-panel" aria-label="프로필 요약">
+          <div class="profile-avatar">YN</div>
+          <div>
+            <p class="profile-name">YOUR NAME</p>
+            <p class="profile-role">Developer / Creator / Learner</p>
+          </div>
+          <dl class="profile-list">
+            <div>
+              <dt>위치</dt>
+              <dd>Seoul, Korea</dd>
+            </div>
+            <div>
+              <dt>관심사</dt>
+              <dd>Web, AI, Product</dd>
+            </div>
+            <div>
+              <dt>상태</dt>
+              <dd>Open to opportunities</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">저를 소개합니다</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            저는 새로운 기술을 배우고, 아이디어를 실제로 작동하는 형태로
+            만드는 과정을 좋아합니다. 복잡한 문제를 단순한 구조로 정리하고,
+            사용자에게 자연스럽게 느껴지는 경험을 만드는 데 관심이 있습니다.
+          </p>
+          <ul class="skill-list" aria-label="기술과 관심 분야">
+            <li>HTML / CSS / JavaScript</li>
+            <li>React / Frontend</li>
+            <li>AI Tools / Automation</li>
+            <li>Product Thinking</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-title">대표 프로젝트</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-label">Project 01</p>
+            <h3>개인 포트폴리오</h3>
+            <p>
+              나의 경험과 작업물을 한곳에 정리한 반응형 웹사이트입니다.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-label">Project 02</p>
+            <h3>업무 자동화 도구</h3>
+            <p>
+              반복적인 작업을 줄이고 핵심 업무에 집중할 수 있도록 돕는
+              도구입니다.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-label">Project 03</p>
+            <h3>학습 기록</h3>
+            <p>
+              공부한 내용을 정리하고 작은 실험들을 모아둔 지식 저장소입니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">함께 이야기해요</h2>
+        </div>
+        <p>
+          협업, 프로젝트, 커피챗 등 편하게 연락 주세요. 아래 링크는 실제
+          주소로 바꿔서 사용하면 됩니다.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">Email</a>
+          <a href="https://github.com/planeats">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-id">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> YOUR NAME. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
